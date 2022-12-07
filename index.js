@@ -1,20 +1,20 @@
-fetch('./productos.json')
+fetch('productos.json')
 .then (res => res.json ())
-.then (res => carrito)
+.then (res => producto)
 
 
-class Producto {
-  constructor(id, nombre, precio) {
-    this.id = id;
-    this.nombre = nombre;
-    this.precio = precio;
-  }
-}
+// class Producto {
+//   constructor(id, nombre, precio) {
+//     this.id = id;
+//     this.nombre = nombre;
+//     this.precio = precio;
+//   }
+// }
 
-const producto1 = new Producto(1, "Pañales", 600);
-const producto2 = new Producto(2, "Mamadera", 1000);
-const producto3 = new Producto(3, "Cuna", 2000);
-const producto4 = new Producto(4, "Mameluco", 800);
+//  const producto1 = new Producto(1, "Pañales", 600);
+//  const producto2 = new Producto(2, "Mamadera", 1000);
+//  const producto3 = new Producto(3, "Cuna", 2000);
+//  const producto4 = new Producto(4, "Mameluco", 800);
 
 const productosArray = [producto1, producto2, producto3, producto4];
 
