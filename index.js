@@ -1,7 +1,27 @@
-fetch('productos.json')
-.then (res => res.json ())
-.then (res => producto)
+const divProductos = document.querySelector("#divProductos");
+const productosContainer = document.querySelector('#contenedor-productos');
 
+fetch('./productosArray.json')
+    .then((resp) => resp.json())
+    .then((data) => {
+        productosArray = data
+            
+        productosArray.forEach((producto) => {
+          divProductos.innerHTML += `
+            <div id="${producto.id}" class="card cardProducto">
+            <div class="card-body">
+            <h5 class="card-title">${producto.nombre}</h5>
+            <p class="card-text">$${producto.precio}</p>
+            <button id="${producto.id}" class="btn btn-primary">Agregar</button>
+            </div>
+            </div>
+            `
+            productosContainer.append(div);
+
+        });
+        })
+  
+        const productosArray = [producto1, producto2, producto3, producto4];
 
 // class Producto {
 //   constructor(id, nombre, precio) {
@@ -16,21 +36,6 @@ fetch('productos.json')
 //  const producto3 = new Producto(3, "Cuna", 2000);
 //  const producto4 = new Producto(4, "Mameluco", 800);
 
-const productosArray = [producto1, producto2, producto3, producto4];
-
-const divProductos = document.querySelector("#divProductos");
-
-productosArray.forEach((producto) => {
-  divProductos.innerHTML += `
-    <div id="${producto.id}" class="card cardProducto">
-    <div class="card-body">
-    <h5 class="card-title">${producto.nombre}</h5>
-    <p class="card-text">$${producto.precio}</p>
-    <button id="${producto.id}" class="btn btn-primary">Agregar</button>
-    </div>
-    </div>
-    `;
-});
 
 const carrito = [];
 const botonesAgregar = document.querySelectorAll(".btn-primary");
