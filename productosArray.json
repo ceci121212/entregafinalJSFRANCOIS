@@ -2,28 +2,28 @@
     {
         "id": 1,
         "nombre": "Pañales Huggies",
-        "imagen": "https: //th.bing.com/th/id/OIP.WKPT4V3LA6flq0uvNfcHjgHaK8?w=129&h=190&c=7&r=0&o=5&pid=1.7",
+        "imagen": "./images/pañales.jpg",
         "precio": 600
     },
 
 {
         "id": 2,
         "nombre": "Mamadera Avent",
-        "imagen": "https: //th.bing.com/th/id/OIP.WKPT4V3LA6flq0uvNfcHjgHaK8?w=129&h=190&c=7&r=0&o=5&pid=1.7",
+        "imagen": "./images/mamaderaavent.jpg",
         "precio": 1000
     },
 
 {
         "id": 3,
         "nombre": "Cuna Evolutiva",
-        "imagen": "https: //th.bing.com/th/id/OIP.WKPT4V3LA6flq0uvNfcHjgHaK8?w=129&h=190&c=7&r=0&o=5&pid=1.7",
+        "imagen": "./images/cunaevolutiva.jpg",
         "precio": 2000
     },
 
     {
         "id": 4,
         "nombre": "Mameluco Oso Panda",
-        "imagen": "https: //www.bing.com/images/search?view=detailV2&ccid=QguS%2fTiX&id=864A63DB823ABDDEC99CB580373D4144B1D96929&thid=OIP.QguS_TiXAlZEMRla96Wp7gHaId&mediaurl=https%3a%2f%2fwww.thebabyshop.com.mx%2f18242-superlarge_default%2fmameluco-para-bebe-con-capucha-6-24-panda-meses-disfraz.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.420b92fd389702564431195af7a5a9ee%3frik%3dKWnZsURBPTeAtQ%26pid%3dImgRaw%26r%3d0&exph=1372&expw=1200&q=Mameluco+Beb%c3%a9&simid=607999664066803309&FORM=IRPRST&ck=96C7B009FACBFE09833E84B500119A52&selectedIndex=0",
+        "imagen": "./images/mamelucoosito.jpg",
         "precio": 800
     }
 ]
